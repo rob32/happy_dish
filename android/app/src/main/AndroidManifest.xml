@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rburkhardt.happy_dish">
    <application
-        android:label="happy_dish"
+        android:label="Happy Dish"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
