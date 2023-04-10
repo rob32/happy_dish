@@ -55,7 +55,7 @@ class HomeScreen extends ConsumerWidget {
     return showAboutDialog(
       context: context,
       applicationName: 'Happy Dish',
-      applicationVersion: 'v1.0.0 Alpha',
+      applicationVersion: 'v1.0.0',
       applicationIcon: Image.asset(
         'assets/images/android12splash.png',
         width: 60,
@@ -65,13 +65,13 @@ class HomeScreen extends ConsumerWidget {
         const SizedBox(
           height: 10,
         ),
-        const Text('Happy Dish is free and open source software licensed '
-            'under the GNU GPL v3. Our App does not collect any '
+        const Text('"Happy Dish" is free and open source software licensed '
+            'under the GNU GPL v3. The App does not collect any '
             'personal information or data from its users. '
             'For more info, click on the following link:'),
         InkWell(
           onTap: () => launchUrl(Uri.parse(
-              'https://github.com/rob32/happy_dish/blob/main/privacy')),
+              'https://github.com/rob32/happy_dish/blob/main/docs/privacy.md')),
           child: Text(
             'Privacy Policy',
             style: TextStyle(color: Theme.of(context).colorScheme.primary),
