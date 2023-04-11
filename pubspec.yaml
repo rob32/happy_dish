@@ -30,12 +30,3 @@ flutter:
         - asset: assets/fonts/KaushanScript-Regular.ttf
   assets:
     - assets/images/android12splash.png
-
-flutter_native_splash:
-  color: "#191C19"
-  image: assets/images/android12splash.png
-  android_12:
-    image: assets/images/android12splash.png
-    color: "#191C19"
-  ios: false
-  web: false
