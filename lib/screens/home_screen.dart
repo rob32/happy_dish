@@ -39,7 +39,7 @@ class HomeScreen extends ConsumerWidget {
                 Visibility(
                   visible: ref.watch(playButtonProvider),
                   replacement: const SizedBox(
-                    height: 70,
+                    height: 120,
                   ),
                   child: const RandomText(),
                 ),

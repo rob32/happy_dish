@@ -12,7 +12,7 @@ class RandomText extends ConsumerWidget {
     String randomDish =
         ref.watch(foodItemsProvider.notifier).getRandomFoodItemName();
     return SizedBox(
-      height: 70,
+      height: 120,
       child: AnimatedTextKit(
         isRepeatingAnimation: false,
         repeatForever: false,
@@ -27,8 +27,9 @@ class RandomText extends ConsumerWidget {
           RotateAnimatedText(
             randomDish,
             rotateOut: false,
+            textAlign: TextAlign.center,
             textStyle: TextStyle(
-              fontSize: 50.0,
+              fontSize: 45,
               fontWeight: FontWeight.bold,
               color: Theme.of(context).colorScheme.primary,
             ),
