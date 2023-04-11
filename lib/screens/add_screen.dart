@@ -57,9 +57,35 @@ class _AddScreenState extends ConsumerState<AddScreen> {
 
     if (newDish.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Center(child: Text('Input cannot be empty')),
-          duration: Duration(milliseconds: 1500),
+        SnackBar(
+          backgroundColor: Theme.of(context).colorScheme.error,
+          content: Center(
+            child: Text(
+              'Input cannot be empty',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onError,
+              ),
+            ),
+          ),
+          duration: const Duration(milliseconds: 2000),
+        ),
+      );
+      return;
+    }
+
+    if (newDish.length >= 25) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: Theme.of(context).colorScheme.error,
+          content: Center(
+            child: Text(
+              'The input must not exceed 25 characters',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onError,
+              ),
+            ),
+          ),
+          duration: const Duration(milliseconds: 2000),
         ),
       );
       return;
@@ -68,8 +94,16 @@ class _AddScreenState extends ConsumerState<AddScreen> {
     if (foodItems.contains(newDish)) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Center(child: Text('$newDish already exists')),
-          duration: const Duration(milliseconds: 1500),
+          backgroundColor: Theme.of(context).colorScheme.error,
+          content: Center(
+            child: Text(
+              '$newDish already exists',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onError,
+              ),
+            ),
+          ),
+          duration: const Duration(milliseconds: 2000),
         ),
       );
       return;
@@ -81,8 +115,8 @@ class _AddScreenState extends ConsumerState<AddScreen> {
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Center(child: Text("Added to list: $newDish")),
-        duration: const Duration(milliseconds: 1500),
+        content: Center(child: Text('"$newDish" has been added.')),
+        duration: const Duration(milliseconds: 2000),
       ),
     );
   }
