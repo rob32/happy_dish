@@ -13,40 +13,45 @@ class RandomText extends ConsumerWidget {
         ref.watch(foodItemsProvider.notifier).getRandomFoodItemName();
     return SizedBox(
       height: 120,
-      child: AnimatedTextKit(
-        isRepeatingAnimation: false,
-        repeatForever: false,
-        animatedTexts: [
-          ScaleAnimatedText(
-            'Hmmmm yummy',
-            textStyle: const TextStyle(
-              fontFamily: "KaushanScript",
-              fontSize: 40,
-            ),
-          ),
-          RotateAnimatedText(
-            randomDish,
-            rotateOut: false,
-            textAlign: TextAlign.center,
-            textStyle: TextStyle(
-              fontSize: 45,
-              fontWeight: FontWeight.bold,
-              color: Theme.of(context).colorScheme.primary,
-            ),
-          ),
-        ],
-        onFinished: () {
-          if (randomDish == "Diet?!") {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Center(
-                    child: Text('No dishes were found. '
-                        'Please add some to the list first.')),
-                duration: Duration(milliseconds: 2500),
+      child: Align(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: AnimatedTextKit(
+            isRepeatingAnimation: false,
+            repeatForever: false,
+            animatedTexts: [
+              ScaleAnimatedText(
+                'Hmmmm yummy',
+                textStyle: const TextStyle(
+                  fontFamily: "KaushanScript",
+                  fontSize: 40,
+                ),
               ),
-            );
-          }
-        },
+              RotateAnimatedText(
+                randomDish,
+                rotateOut: false,
+                textAlign: TextAlign.center,
+                textStyle: TextStyle(
+                  fontSize: 45,
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
+              ),
+            ],
+            onFinished: () {
+              if (randomDish == "Diet?!") {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Center(
+                        child: Text('No dishes were found. '
+                            'Please add some to the list first.')),
+                    duration: Duration(milliseconds: 2500),
+                  ),
+                );
+              }
+            },
+          ),
+        ),
       ),
     );
   }
