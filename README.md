@@ -2,9 +2,11 @@
   <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/banner.png">
 </p>
 
-<h1 align="center">Happy Dish</h1>
-<h3 align="center">A decision helper. Let fate decide!</h3>
+# About the project
 
+> "Happy Dish" was a side project to get me up to speed with mobile development using Flutter and Dart.
+
+For all those who ask or get asked the same question over and over again: *"What should we eat today?"*. Let fate decide and don't waste any more time on this tedious question.
 # Screenshots
 
 <p align="center">
@@ -12,12 +14,6 @@
   <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/add-screen.png" width="256" hspace="4">
   <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/list-screen.png" width="256" hspace="4">
 </p>
-
-# About the project
-
-> "Happy Dish" was a side project to get me up to speed with mobile development using Flutter and Dart.
-
-For all those who ask or get asked the same question over and over again: *"What should we eat today?"*. Let fate decide and don't waste any more time on this tedious question.
 
 # Features
 
@@ -37,4 +33,19 @@ The app allows you to enter dishes that would come into question. You can view a
 
 # License
 
-This project is licensed under the [GNU GPLv3](https://github.com/rob32/happy_dish/blob/main/LICENSE.md) Licence.
+This project is licensed under the [GNU GPLv3](https://github.com/rob32/happy_dish/blob/main/LICENSE.md) Licence:
+
+    Copyright (C) 2023 Robert Burkhardt
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>
