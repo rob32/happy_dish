@@ -7,6 +7,7 @@
 > "Happy Dish" was a side project to get me up to speed with mobile development using Flutter and Dart.
 
 For all those who ask or get asked the same question over and over again: *"What should we eat today?"*. Let fate decide and don't waste any more time on this tedious question.
+
 # Screenshots
 
 <p align="center">
@@ -23,6 +24,10 @@ The app allows you to enter dishes that would come into question. You can view a
 - Storage of the entries for reuse (shared_preferences)
 - Eye friendly dark color theme
 - Neither tracking nor advertising
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+      alt="Get it on Google Play"
+      height="80">](https://play.google.com/store/apps/details?id=com.rburkhardt.happy_dish)
 
 # Built with
 
