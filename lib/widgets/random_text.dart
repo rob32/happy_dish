@@ -41,11 +41,17 @@ class RandomText extends ConsumerWidget {
             onFinished: () {
               if (randomDish == "Diet?!") {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
+                  SnackBar(
+                    backgroundColor: Theme.of(context).colorScheme.error,
                     content: Center(
-                        child: Text('No dishes were found. '
-                            'Please add some to the list first.')),
-                    duration: Duration(milliseconds: 2500),
+                      child: Text(
+                        'Nothing found. Please add dishes first',
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onError,
+                        ),
+                      ),
+                    ),
+                    duration: const Duration(milliseconds: 2000),
                   ),
                 );
               }

@@ -97,7 +97,7 @@ class _AddScreenState extends ConsumerState<AddScreen> {
           backgroundColor: Theme.of(context).colorScheme.error,
           content: Center(
             child: Text(
-              '$newDish already exists',
+              '"$newDish" already exists',
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onError,
               ),
@@ -115,7 +115,15 @@ class _AddScreenState extends ConsumerState<AddScreen> {
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Center(child: Text('"$newDish" has been added.')),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        content: Center(
+          child: Text(
+            '"$newDish" has been added.',
+            style: TextStyle(
+              color: Theme.of(context).colorScheme.onPrimary,
+            ),
+          ),
+        ),
         duration: const Duration(milliseconds: 2000),
       ),
     );
