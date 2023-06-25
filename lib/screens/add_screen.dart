@@ -33,16 +33,19 @@ class _AddScreenState extends ConsumerState<AddScreen> {
             const SizedBox(
               height: 20,
             ),
-            SizedBox(
-              width: 300,
-              child: TextField(
-                controller: _controller,
-                decoration: const InputDecoration(
-                  hintText: 'One by one',
-                  prefixIcon: Icon(Icons.fastfood),
-                  border: OutlineInputBorder(),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: SizedBox(
+                width: 300,
+                child: TextField(
+                  controller: _controller,
+                  decoration: const InputDecoration(
+                    hintText: 'One by one',
+                    prefixIcon: Icon(Icons.fastfood),
+                    border: OutlineInputBorder(),
+                  ),
+                  onEditingComplete: () => _addItem(context),
                 ),
-                onEditingComplete: () => _addItem(context),
               ),
             )
           ],
