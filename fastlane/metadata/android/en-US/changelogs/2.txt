@@ -1,0 +1,2 @@
+- refactor SnackBars (color, text)
+- fix text alignment and size for small screens

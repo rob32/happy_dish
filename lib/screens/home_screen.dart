@@ -56,7 +56,7 @@ class HomeScreen extends ConsumerWidget {
     return showAboutDialog(
       context: context,
       applicationName: 'Happy Dish',
-      applicationVersion: 'v1.0.0',
+      applicationVersion: 'v1.0.1',
       applicationIcon: Image.asset(
         'assets/images/android12splash.png',
         width: 60,
