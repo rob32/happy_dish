@@ -30,10 +30,11 @@ class HomeScreen extends ConsumerWidget {
               children: [
                 Text(
                   "What to eat?",
-                  style: Theme.of(context).textTheme.displayLarge,
+                  style: Theme.of(context).textTheme.displayMedium,
+                  textAlign: TextAlign.center,
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 25,
                 ),
                 const PlayIconButton(),
                 Visibility(

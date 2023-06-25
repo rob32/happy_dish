@@ -21,10 +21,10 @@ class RandomText extends ConsumerWidget {
             repeatForever: false,
             animatedTexts: [
               ScaleAnimatedText(
-                'Hmmmm yummy',
+                'Yummy',
                 textStyle: const TextStyle(
                   fontFamily: "KaushanScript",
-                  fontSize: 40,
+                  fontSize: 38,
                 ),
               ),
               RotateAnimatedText(
@@ -32,7 +32,7 @@ class RandomText extends ConsumerWidget {
                 rotateOut: false,
                 textAlign: TextAlign.center,
                 textStyle: TextStyle(
-                  fontSize: 45,
+                  fontSize: 38,
                   fontWeight: FontWeight.bold,
                   color: Theme.of(context).colorScheme.primary,
                 ),
