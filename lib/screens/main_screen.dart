@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'add_screen.dart';
-import 'home_screen.dart';
-import 'list_screen.dart';
+import 'package:happy_dish/screens/home_screen.dart';
+import 'package:happy_dish/screens/my_dishes_screen.dart';
+import 'package:happy_dish/screens/get_inspired_screen.dart';
+import 'package:happy_dish/screens/shopping_list_screen.dart';
 
 class MainScreen extends ConsumerStatefulWidget {
   const MainScreen({super.key});
@@ -16,8 +16,9 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   int index = 0;
   final screens = [
     const HomeScreen(),
-    const AddScreen(),
-    const ListScreen(),
+    const MyDishesScreen(),
+    const GetInspiredScreen(),
+    const ShoppingListScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -30,22 +31,40 @@ class _MainScreenState extends ConsumerState<MainScreen> {
             this.index = index;
           });
         },
-        labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
-        destinations: const [
+        labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+        backgroundColor: const Color(0xFF14233A),
+        elevation: 0,
+        indicatorColor: Colors.transparent,
+        destinations: [
           NavigationDestination(
-            icon: Icon(Icons.tips_and_updates_outlined),
-            selectedIcon: Icon(Icons.tips_and_updates),
-            label: "Play",
+            icon: const Icon(Icons.home),
+            selectedIcon: Icon(
+              Icons.home_filled,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            label: "Home",
           ),
           NavigationDestination(
-            icon: Icon(Icons.playlist_add_outlined),
-            selectedIcon: Icon(Icons.playlist_add),
-            label: "Add",
+            icon: const Icon(Icons.fastfood_outlined),
+            selectedIcon: Icon(
+              Icons.fastfood,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            label: "My Dishes",
           ),
           NavigationDestination(
-            icon: Icon(Icons.playlist_remove_outlined),
-            selectedIcon: Icon(Icons.playlist_remove),
-            label: "Remove",
+            icon: const Icon(Icons.tips_and_updates_outlined),
+            selectedIcon: Icon(
+              Icons.tips_and_updates,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            label: "Get Inspired",
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.shopping_bag_outlined),
+            selectedIcon: Icon(Icons.shopping_bag,
+                color: Theme.of(context).colorScheme.primary),
+            label: "Shopping List",
           ),
         ],
       ),

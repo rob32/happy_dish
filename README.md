@@ -2,27 +2,25 @@
   <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/banner.png">
 </p>
 
-# About the project
+# About
 
-> "Happy Dish" was a side project to get me up to speed with mobile development using Flutter and Dart.
-
-For all those who ask or get asked the same question over and over again: *"What should we eat today?"*. Let fate decide and don't waste any more time on this tedious question.
+Unleash the joy of dining decisions with HappyDish! Struggling to choose what to eat? Let HappyDish inspire you with exciting dishes and craft your shopping list effortlessly.
 
 # Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/home-screen.png" width="256" hspace="4">
-  <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/add-screen.png" width="256" hspace="4">
-  <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/list-screen.png" width="256" hspace="4">
+  <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/1_home_screen.png" width="256" hspace="4">
+  <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/2_my_dishes_screen.png" width="256" hspace="4">
+  <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/3_get_inspired_screen.png" width="256" hspace="4">
+  <img src="https://raw.githubusercontent.com/rob32/happy_dish/main/docs/media/screenshots/4_schopping_list_screen.png" width="256" hspace="4">
 </p>
 
 # Features
 
-The app allows you to enter dishes that would come into question. You can view and delete them on a separate page. After filling the list with eligible dishes, you can press a button to let the sophisticated algorithm do its work. Within a very short time, you will get an answer presented in an appealing way.
-
-- Clean and minimalistic design (Material3)
-- Storage of the entries for reuse (shared_preferences)
-- Eye friendly dark color theme
+- Decision helper
+- Shopping list
+- Inspiration source
+- Clean and minimalistic design
 - Neither tracking nor advertising
 
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"

@@ -1,10 +1,9 @@
-For all those who ask or get asked the same question over and over again: <i>"What should we eat today?"</i>. Let fate decide and don't waste any more time on this tedious question.
-
-The app allows you to enter dishes that would come into question. You can view and delete them on a separate page. After filling the list with eligible dishes, you can press a button to let the sophisticated algorithm do its work. Within a very short time, you will get an answer presented in an appealing way.
+Unleash the joy of dining decisions with HappyDish! Struggling to choose what to eat? Let HappyDish inspire you with exciting dishes and craft your shopping list effortlessly.
 
 <b>Features:</b>
 
-- Clean and minimalistic design (Material3)
-- Storage of the entries for reuse
+- Decision helper
+- Shopping list
+- Inspiration source
+- Clean and minimalistic design
 - Neither tracking nor advertising
-- Lightweight

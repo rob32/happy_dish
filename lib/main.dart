@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -8,6 +9,9 @@ import 'screens/main_screen.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final sharedPreferences = await SharedPreferences.getInstance();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
   runApp(ProviderScope(
     overrides: [
       sharedPrefsProvider.overrideWithValue(sharedPreferences),
@@ -24,10 +28,11 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: 'What to eat?',
       theme: ThemeData(
+        fontFamily: "Work Sans",
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF27AE60),
-          brightness: Brightness.dark,
-        ),
+            seedColor: const Color(0xFF27AE60),
+            brightness: Brightness.dark,
+            background: const Color(0xFF14233A)),
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,

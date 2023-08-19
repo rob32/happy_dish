@@ -1,0 +1,7 @@
+- major redesign
+- added shopping list
+- added get inspired screen
+- added sound and vibration feedback
+- added help texts
+- fixed app icons
+- and other small changes and improvements
